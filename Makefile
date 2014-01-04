@@ -5,46 +5,43 @@
 #                                                     +:+ +:+         +:+      #
 #    By: cfeijoo <cfeijoo@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2013/11/28 05:03:25 by cfeijoo           #+#    #+#              #
-#    Updated: 2013/12/28 18:57:38 by cfeijoo          ###   ########.fr        #
+#    Created: 2013/11/24 16:52:10 by cfeijoo           #+#    #+#              #
+#    Updated: 2014/01/04 16:49:07 by cfeijoo          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = fdf
-INCLUDEFOLDER = -I./includes/ -I./libft/includes/
-LIBFOLDER = -L./libft/ -L/usr/X11/lib/ -L/usr/X11/include
-LIBS = -lmlx -lXext -lX11 -lft
-CFLAGS = -g -Wall -Werror -Wextra -O4
+NAME = guava
 
-CC = gcc
-CFILES = main.c					\
-		 blend_colors.c			\
-		 transformations.c		\
-		 get_map_data.c			\
-		 get_next_line.c		\
-		 display_vector.c		\
-		 fade.c					\
-		 cossin.c				\
-		 draw_aa_vector.c		\
-		 draw_vector.c
+INCLUDEFOLDERS = -I./includes/ -I../libft/includes/
+LIBFOLDERS = -L../libft/ -L/usr/X11/lib/ -L/usr/X11/include
+LIBS = -lmlx -lXext -lX11 -lft -lguava
+
+CC = /usr/bin/gcc
+AR = /usr/bin/ar
+CFLAGS = -Wall -Wextra -Werror -O4
+
+CFILES	=	draw_vector.c			\
+			draw_aa_vector.c		\
+			display_vector.c		\
+			get_map_data.c			\
+			get_next_line.c			\
+			transformations.c		\
+			fade.c					\
+			blend_colors.c			\
+			init.c
 
 OFILES = $(CFILES:.c=.o)
 
-$(NAME) :
-	$(CC) -c $(CFILES) $(INCLUDEFOLDER) $(LIBFOLDER) $(LIBS) $(CFLAGS)
-	$(CC) $(OFILES) $(INCLUDEFOLDER) $(LIBFOLDER) $(LIBS) $(CFLAGS) -o $(NAME)
+all: $(NAME)
 
-updatelib :
-	cd libft/ && git pull
-	make -C libft/ re
+$(NAME):
+	$(CC) -c $(CFILES) $(INCLUDEFOLDERS) $(LIBFOLDERS) $(LIBS) $(CFLAGS)
+	$(AR) rcs $(NAME).a $(OFILES)
 
-complib :
-	make -C libft/ re
-
-clean :
+clean:
 	rm -f $(OFILES)
 
-fclean : clean
-	rm -f $(NAME)
+fclean: clean
+	rm -f $(NAME).a
 
-re : fclean $(NAME)
+re: fclean all

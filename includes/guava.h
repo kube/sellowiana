@@ -6,12 +6,12 @@
 /*   By: cfeijoo <cfeijoo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/16 21:58:14 by cfeijoo           #+#    #+#             */
-/*   Updated: 2013/12/29 12:25:39 by cfeijoo          ###   ########.fr       */
+/*   Updated: 2014/01/02 20:54:20 by cfeijoo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FDF_H
-# define FDF_H
+#ifndef GUAVA_H
+# define GUAVA_H
 # include <mlx.h>
 # include <unistd.h>
 # include <fcntl.h>
