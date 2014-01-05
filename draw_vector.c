@@ -6,11 +6,11 @@
 /*   By: cfeijoo <cfeijoo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/18 17:27:34 by cfeijoo           #+#    #+#             */
-/*   Updated: 2013/12/29 10:55:29 by cfeijoo          ###   ########.fr       */
+/*   Updated: 2014/01/05 16:23:29 by cfeijoo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <fdf.h>
+#include <guava.h>
 
 static void	pixel_to_image(t_env *env, t_point a, int color)
 {

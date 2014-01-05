@@ -6,7 +6,7 @@
 /*   By: cfeijoo <cfeijoo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/16 21:58:14 by cfeijoo           #+#    #+#             */
-/*   Updated: 2014/01/02 20:54:20 by cfeijoo          ###   ########.fr       */
+/*   Updated: 2014/01/05 16:23:26 by cfeijoo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,14 +39,6 @@ typedef struct			s_vector
 	t_point				*b;
 }						t_vector;
 
-typedef struct			s_vertex;
-{
-	t_point				*a;
-	t_point				*b;
-	t_point				*c;
-	int					color;
-}						t_vertex;
-
 typedef union
 {
 	struct			
@@ -58,6 +50,14 @@ typedef union
 	};
 	int					color;
 }						u_color;
+
+typedef struct			s_pressed_keys
+{
+	int					up;
+	int					down;
+	int					left;
+	int					right;
+}						t_pressed_keys;
 
 typedef	struct			s_env
 {
@@ -75,6 +75,7 @@ typedef	struct			s_env
 	float				horizon_z;
 	int					rotation;
 	float				angle_x;
+	t_pressed_keys		pressed_keys;
 	t_point				***map;
 	t_point				center;
 }						t_env;

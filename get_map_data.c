@@ -6,11 +6,11 @@
 /*   By: cfeijoo <cfeijoo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/22 16:42:18 by cfeijoo           #+#    #+#             */
-/*   Updated: 2013/12/22 23:40:39 by cfeijoo          ###   ########.fr       */
+/*   Updated: 2014/01/04 17:20:25 by cfeijoo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <fdf.h>
+#include <guava.h>
 
 static void	store_map_points(t_point **map_line, char *line, int y)
 {

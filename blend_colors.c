@@ -6,11 +6,11 @@
 /*   By: cfeijoo <cfeijoo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/19 19:07:01 by cfeijoo           #+#    #+#             */
-/*   Updated: 2013/12/27 21:06:30 by cfeijoo          ###   ########.fr       */
+/*   Updated: 2014/01/04 17:19:42 by cfeijoo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <fdf.h>
+#include <guava.h>
 
 int				blend_colors(int color1, int color2, float coeff)
 {
