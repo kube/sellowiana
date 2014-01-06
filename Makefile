@@ -6,7 +6,7 @@
 #    By: cfeijoo <cfeijoo@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/24 16:52:10 by cfeijoo           #+#    #+#              #
-#    Updated: 2014/01/05 16:23:27 by cfeijoo          ###   ########.fr        #
+#    Updated: 2014/01/06 17:26:00 by cfeijoo          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libguava
 
 INCLUDEFOLDERS = -I./includes/ -I../libft/includes/
 LIBFOLDERS = -L../libft/ -L/usr/X11/lib/ -L/usr/X11/include
-LIBS = -lmlx -lXext -lX11 -lft
+LIBS = -lmlx -lXext -lX11 -lft -lm
 
 CC = gcc
 AR = ar
