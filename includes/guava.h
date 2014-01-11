@@ -6,7 +6,7 @@
 /*   By: cfeijoo <cfeijoo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/16 21:58:14 by cfeijoo           #+#    #+#             */
-/*   Updated: 2014/01/05 19:15:51 by cfeijoo          ###   ########.fr       */
+/*   Updated: 2014/01/11 17:27:51 by cfeijoo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,10 @@
 
 # include <stdio.h>
 # include <time.h>
+
+/*
+**	Remove WIN_HEIGHT & WIN_WIDTH, add to env
+*/
 
 # define WIN_HEIGHT 920
 # define WIN_WIDTH 1220
@@ -97,7 +101,6 @@ void		rotate_x_axis(t_vector *cache, float angle_x);
 void		rotate_y_axis(t_vector *cache, float angle_y);
 void		translation(t_vector *cache, float x, float y, float z);
 void		scale(t_vector *cache, float coeff);
-t_point		***get_map_data(char *file_name);
 void		load_vector(t_vector *cache, t_point *a, t_point *b, t_point *center);
 int			get_color_from_z(float z);
 void		horizon_point(t_vector *vector, float horizon_z);

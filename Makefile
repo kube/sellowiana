@@ -6,7 +6,7 @@
 #    By: cfeijoo <cfeijoo@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/24 16:52:10 by cfeijoo           #+#    #+#              #
-#    Updated: 2014/01/06 17:26:00 by cfeijoo          ###   ########.fr        #
+#    Updated: 2014/01/11 17:27:56 by cfeijoo          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,12 +18,11 @@ LIBS = -lmlx -lXext -lX11 -lft -lm
 
 CC = gcc
 AR = ar
-CFLAGS = -Wall -Wextra -Werror -O4
+CFLAGS = -Wall -Wextra -Werror
 
 CFILES	=	draw_vector.c			\
 			draw_aa_vector.c		\
 			display_vector.c		\
-			get_map_data.c			\
 			get_next_line.c			\
 			transformations.c		\
 			fade.c					\
