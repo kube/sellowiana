@@ -6,7 +6,7 @@
 /*   By: cfeijoo <cfeijoo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/22 23:35:48 by cfeijoo           #+#    #+#             */
-/*   Updated: 2014/01/04 17:20:30 by cfeijoo          ###   ########.fr       */
+/*   Updated: 2014/01/11 17:33:53 by cfeijoo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void		fade(t_env *env, int color, float coeff)
 void		clear(t_env *env)
 {
 	int		i;
-	
+
 	i = 0;
 	while (i < WIN_WIDTH * WIN_HEIGHT)
 	{

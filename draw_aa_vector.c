@@ -6,7 +6,7 @@
 /*   By: cfeijoo <cfeijoo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/18 17:27:34 by cfeijoo           #+#    #+#             */
-/*   Updated: 2014/01/04 17:20:05 by cfeijoo          ###   ########.fr       */
+/*   Updated: 2014/01/11 17:34:10 by cfeijoo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static void	pixel_to_image(t_env *env, t_point a, int color, float opacity)
 	if (i < WIN_WIDTH * WIN_HEIGHT && (int)a.y >= 0 && (int)a.x >= 0
 		&& (int)a.x < WIN_WIDTH)
 	{
-		env->data[i] = blend_colors(env->data[i], color, (opacity + 1) / 2);	
+		env->data[i] = blend_colors(env->data[i], color, (opacity + 1) / 2);
 	}
 }
 
