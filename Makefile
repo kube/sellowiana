@@ -6,11 +6,11 @@
 #    By: cfeijoo <cfeijoo@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2013/11/24 16:52:10 by cfeijoo           #+#    #+#              #
-#    Updated: 2014/02/12 14:23:43 by cfeijoo          ###   ########.fr        #
+#    Updated: 2014/02/12 14:30:52 by cfeijoo          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libguava
+NAME = libsellowiana
 
 INCLUDEFOLDERS = -I./includes/ -I../libft/includes/
 LIBFOLDERS = -L../libft/ -L/usr/X11/lib/ -L/usr/X11/include

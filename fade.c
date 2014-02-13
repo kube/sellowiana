@@ -6,11 +6,11 @@
 /*   By: cfeijoo <cfeijoo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/22 23:35:48 by cfeijoo           #+#    #+#             */
-/*   Updated: 2014/01/11 17:33:53 by cfeijoo          ###   ########.fr       */
+/*   Updated: 2014/02/13 02:40:51 by cfeijoo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <guava.h>
+#include <sellowiana.h>
 
 void		fade(t_env *env, int color, float coeff)
 {
